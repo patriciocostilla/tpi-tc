@@ -1,0 +1,16 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard for arduino control system",
+  "scripts": {
+    "start": "node-red dashboard/flows.json",
+    "clean": "rm -R node_modules"
+  },
+  "author": "Team SEELE",
+  "license": "ISC",
+  "dependencies": {
+    "node-red": "^1.0.3",
+    "node-red-dashboard": "^2.19.0",
+    "node-red-node-serialport": "^0.9.1"
+  }
+}
