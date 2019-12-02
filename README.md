@@ -19,8 +19,6 @@ Teoría de control. UTN FRRe. 2019
 
 ## Para los arduinos
 
-* Crear una copia de `slave_example.ino` removiendo el sufijo `_example`.
-* Adaptar el código para el caso particular de cada sensor
 * ???
 * Profit
 * // TO DO
