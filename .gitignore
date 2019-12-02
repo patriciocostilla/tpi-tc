@@ -1,3 +1,4 @@
 node_modules
 npm-debug.log
 slave/slave.ino
+master/master.ino
