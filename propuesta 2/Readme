@@ -1,0 +1,12 @@
+Propuesta para trabajar con Dahsboard en Node-red, teniendo un
+Arduino como Concentrador o HUB y varios RTUs en modo esclavo,
+en donde el concentrador mediante request solicita que envie
+el último valor que registraron.
+
+El tamaño se encuentra definido como máximo de 4 bytes y en caso de faltar "rellena valores". Faltaría revisar acorde a los sensores en la lista si es suficiente o se necesitaría adaptar para algún sensor en particular.
+
+No contempla la utilización de Buffer.
+
+El HUB no tiene implementado la conectividad a la plataforma de IBM Watson, faltaría realizarlo
+
+

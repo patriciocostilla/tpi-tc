@@ -1,0 +1,14 @@
+Propuesta para trabajar con Dahsboard en Excel, teniendo un
+Arduino como Concentrador o HUB y varios RTUs en modo esclavo,
+en donde el concentrador mediante request solicita que envie
+el último valor que registraron.
+
+Para el HUB, hay que desarrollar la solicitud a varias RTUs
+
+El tamaño se encuentra definido  de 3 bytes cuando solicita el HUB. Faltaría revisar acorde a los sensores en la lista si hay que adaptar el modelo.
+
+No Contempla la utilización de Buffer.
+
+El HUB tiene implementado la conectividad a la plataforma de IBM Watson.
+
+
