@@ -1,12 +1,8 @@
 #include <Wire.h>
 
-int bytes_8 = 8; // cantidad de bytes asignados para 2 sensores (4 bytes por cada uno)
-int bytes_16 = 16; // cantidad de bytes asignados para 2 sensores particulares-> joystick (12 bytes:2 de 4 bytes por los ejes y 4 bytes por pulsador) y 4 bytes para el sensore restante.
-int cant_placas = 9; // cantidad de placas a conectar a la red I2C
-
 void setup()
 {
-  Wire.begin(); 
+  Wire.begin();
   Serial.begin(9600);
 }
 
@@ -14,13 +10,13 @@ void loop()
 {
   char c;
   String data = "{";
-  for (int i=0; i<cant_placas; i++) {
-    if (i == 1) {
-      Wire.requestFrom(i, 1bytes_16);
-    } else {
-       Wire.requestFrom(i, bytes_8);
-    }
-    
+  for (int i=1; i<2; i++) {
+    //if (i == 1) {
+      Wire.requestFrom(i, 16);
+    //} else {
+      // Wire.requestFrom(i, 8);
+    //}
+ 
     //SENSOR 1
     data += "\"val_";
     data += i*2;
