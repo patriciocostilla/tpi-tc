@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "node-red": "^1.0.3",
+    "node-red-contrib-ibm-watson-iot": "^0.2.8",
     "node-red-dashboard": "^2.19.0",
     "node-red-node-serialport": "^0.9.1"
   }
